@@ -1,0 +1,3 @@
+$SecurePassword = ConvertTo-SecureString "qwerty654321!" -AsPlainText -Force
+
+New-AzADUser -DisplayName "yuser1" -UserPrincipalName "yuser1@KerneliosAzoutlook.onmicrosoft.com" -Password $SecurePassword -MailNickname "yuser1" -AccountEnabled $true
